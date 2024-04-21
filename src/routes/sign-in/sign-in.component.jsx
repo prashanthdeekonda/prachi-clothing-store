@@ -7,8 +7,9 @@ import {
   signInWithGoogleRedirect,
 } from "../../utils/firebase/firebase.util";
 
+import SignUpForm from "../../components/sign-up-form/sign-up-form.component";
+
 const SignIn = () => {
-  
   // with this you can leverage redirect google func
   // useEffect(async () => {
   //   const response = await getRedirectResult(auth);
@@ -36,6 +37,7 @@ const SignIn = () => {
       {/* <button onClick={signInWithGoogleRedirect}>
         Sign In with Google Redirect
       </button> */}
+      <SignUpForm />
     </div>
   );
 };
