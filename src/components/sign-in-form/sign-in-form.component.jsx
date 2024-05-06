@@ -2,7 +2,6 @@ import "./sign-in-form.styles.scss";
 
 import { useState } from "react";
 import {
-  createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
   signInAuthUserWithEmailAndPassword,
   signInWithGooglePopup,
@@ -80,11 +79,11 @@ const SignInForm = () => {
         />
 
         <FormInput
-          label="password"
+          label="Password"
           type="password"
           required
           onChange={handleChange}
-          name="password"
+          name="Password"
           value={password}
         />
 
